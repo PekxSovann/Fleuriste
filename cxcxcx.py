@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+"""
+Présentation...
+"""
+
 import tkinter as tk
 from tkinter import ttk
 
