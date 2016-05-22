@@ -24,4 +24,11 @@ def charger_partie():
 
 def charger_parametres():
     """Extrait les paramètres d'un fichier texte dedié"""
-    pass
+    with open('parametres.txt', 'r') as fichier:
+        contenu = fichier.read()
+        lignes = contenu.split()
+        parametres = dict()
+        for ligne in lignes:
+            parametre = ligne.split("=")
+            parametres[parametre[0]] = parametre[1]
+        return parametres

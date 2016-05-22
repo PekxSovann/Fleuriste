@@ -1,1 +1,2 @@
-VitesseTic=
+VitesseTic=1/3
+ParametreTest=a

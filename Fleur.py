@@ -75,7 +75,7 @@ class Fleur:
 
             # Une hydratation trop ou pas assez elevée baisse la vitalité
             if self.hydratation < 50 or self.hydratation > 120:
-                self.vie(-3)
+                self.vie(-2)
 
             # Atteindre 100 de croissance fait baisser la vitalité
             if self.croissance == 100:
@@ -88,6 +88,7 @@ class Fleur:
             return True
 
         else:
+            # Quand sa vitalité atteint 0 elle est meurt.
             print("La fleur est morte !")
 
             return False
